@@ -1,0 +1,51 @@
+ 
+ .login  .btn_input .mint-cell-wrapper{
+ 	padding:0px;
+ }
+ .login  .btn_input .mint-field-core{
+	height: 40px !important;
+	width: 100%;
+	margin-bottom: 10px;
+	border:1px solid #999;
+	padding: 0px;
+	text-indent: 10px;
+	border-radius: 5px;
+}
+.index .mint-cell-text{
+	color: #505050;
+}
+.index .wh_content_item div .wh_isToday{
+background: #51c597;
+color: #000;
+}
+.wh_content_item div{
+  color: #000 ;
+}
+.wh_top_changge li{
+	color: #000 !important;
+}
+.wh_jiantou1{
+	border-top: 2px solid #000 !important;
+    border-left: 2px solid #000 !important;
+}
+.wh_jiantou2{
+	border-top: 2px solid #000 !important;
+    border-right: 2px solid #000 !important;
+}
+.wh_content_all{
+  background-color:#fff !important;
+}
+
+.revenue .payStyle .mint-field{
+	border-bottom: 1px solid #999999;
+}
+.revenue .payStyle .mint-field .mint-field-core{
+	border: 1px solid #999999;
+	text-indent: 10px;
+	height: 35px;
+	border-radius: 5px;
+}
+.revenue .payStyle .mint-field .mint-cell-wrapper{
+	padding-right: 70px;
+	height:56px;
+}
