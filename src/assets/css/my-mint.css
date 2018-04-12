@@ -49,3 +49,39 @@ color: #000;
 	padding-right: 70px;
 	height:56px;
 }
+/* 考勤页面的样式 */
+.checkList ul li{
+	height: 40px;
+	border-bottom: 1px solid #999;
+}
+.checkList ul li .mint-radiolist:nth-child(1) .mint-radiolist-title{
+	box-sizing: border-box;
+	float: left;
+    font-size: 14px;
+	width: 80px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	margin:0px;
+ }
+ .checkList ul li .mint-radiolist .mint-cell{
+ 	float: left;
+ 	width: 90px;
+ 	min-height: 40px;
+ }
+ .checkList ul li .mint-radiolist .mint-cell .mint-cell-wrapper .mint-radiolist-label{
+ 	padding: 0px;
+ 	font-size: 14px;
+ 	color: #999;
+ }
+
+ /* 现金流水样式 */
+  .cash .cash_model ul li .mint-field .mint-cell-title{
+    text-align: center;
+  }
+  .cash .cash_model ul li .mint-cell:first-child .mint-cell-wrapper .mint-cell-value .mint-field-core{
+  	height: 30px;
+  	text-indent: 10px;
+  	border-radius: 5px;
+  	border: 1px solid #999;
+  }

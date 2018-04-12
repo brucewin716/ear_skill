@@ -6,17 +6,13 @@
       </router-link>
     </mt-header>
     <div class="checkList">
-      <table>
-        <tr>
-          <td>国际开</td>
-          <td><mt-radio  v-model="value" :options="['上班']"></mt-radio></td>
-          <td><mt-radio  v-model="value" :options="['休息']"></mt-radio></td>
-          <td><mt-radio  v-model="value" :options="['请假']"></mt-radio></td>
-          <td></td>
-        </tr>
-      </table>
+       <ul >
+         <li v-for='(item,index) in items'>
+          <mt-radio  :title="item"   :options="['上班','休息','请假']"></mt-radio>
+        </li>
+       </ul>
     </div>
-    <mt-button type="primary" class="btn_submit">提交结账</mt-button>
+    <mt-button type="primary" class="btn_submit">提交</mt-button>
   </div>
 </template>
 
@@ -25,7 +21,7 @@ export default {
   name: 'check',
   data () {
     return {
-    
+      items:['国际开','杨杰','王婷婷','贺国军','郭积开','杨大爷','呵呵哒','京东方','打的费','赶得到']
     }
   },
 
@@ -34,8 +30,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .checkList table tr td{
-    width: 20%;
-    text-align: left;
+  .btn_submit{
+    display: block;
+    width:80%;
+    margin:20px auto 0px auto;
   }
 </style>

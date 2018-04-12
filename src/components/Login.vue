@@ -19,8 +19,9 @@ export default {
     }
   },
   methods:{
-      verify(){
-        if(!/^[a-zA-Z0-9]{8}$/.test(this.username)){
+      submitLogin(){
+        //登录前的验证
+       if(!/^[a-zA-Z0-9]{8}$/.test(this.username)){
           Toast({
             message: '账号错误',
             position: 'middle',
@@ -33,30 +34,33 @@ export default {
           });
           return false;
         }
-      },
-      submitLogin(){
-        //登录前的验证
-       this.verify();
+       Indicator.open({
+          text: '正在提交登录...',
+          spinnerType: 'fading-circle'
+        });
         //提交登录
         login({
           account:this.username,
           password:this.password
         }).then((res)=>{
-          // Indicator.open({
-          //   text: '验证成功,即将登录',
-          //   spinnerType: 'fading-circle'
-          // });
-          var result=res.error;
-          console.log(result);
+          
+          Indicator.close();
+          var result=res.data.error;
           if(result==0){
-              Indicator.open({
-                text: '登录成功,正在跳转',
-                spinnerType: 'fading-circle'
-              });
-              this.$router.replace({ path: 'index' });
+              this.$store.commit("LOGIN",res.data.data);
+              this.$router.replace({ path: '/index' });
+          }else{
+            Toast({
+              message:res.data.message,
+              position: 'middle',
+            });
           }
+        }).catch((e)=>{
+          Toast({
+              message:e.message,
+              position: 'middle',
+            });
         })
-
       }
   }
 
