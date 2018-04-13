@@ -13,6 +13,13 @@ export const SUBMIT_BUSINESS_AMOUNT='/api/store/submitBusinessAmount';//提交�
 
 export const GET_TODAY_SITUATION='/api/store/getTodaySituation';//获取当前日期情况
 
-export const GET_EMPLOYYEE_KAOHE = '/api/store/employee/kaohe'
+export const GET_AMOUNT_WATER_LIST='/api/store/getAmountWaterList';//获取当天的流水账列表
 
-export const SUBMIT_EMPLOYEE_KAOHE = '/api/store/employee/submitKaohe'
+export const UPDATE_AMOUNT_WATER='/api/store/updateAmountWater';//更改流水账信息
+
+export const SUBMIT_AMOUNT_WATER='/api/store/submitAmontWater';//增加流水信息
+
+
+// export const GET_EMPLOYYEE_KAOHE = '/api/store/employee/kaohe'
+
+// export const SUBMIT_EMPLOYEE_KAOHE = '/api/store/employee/submitKaohe'

@@ -85,3 +85,12 @@ color: #000;
   	border-radius: 5px;
   	border: 1px solid #999;
   }
+
+.mint-indicator{
+	position:fixed;
+	z-index: 99999999999;
+}
+.mint-toast{
+	position:fixed;
+	z-index: 99999999999;
+}
